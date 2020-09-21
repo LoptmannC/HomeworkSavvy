@@ -1,3 +1,134 @@
-.a {
+body {
+  font-size: 16px;
+  font-family: 'Geo', sans-serif;
+  --greycolor: rgb(175, 175, 175);
+  --darkgreycolor: rgb(53, 53, 53);
+  --almostblack: rgb(10, 10, 10);
+  --white: rgb(255, 255, 255);
+  --blue: rgb(57, 67, 207);
+  background-color: var(--almostblack);
+  color: var(--white);
+}
 
+.navbar ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+  width: 1175px;
+  overflow: hidden;
+  background-color: var(--darkgreycolor);
+  border-style: dashed;
+  border-color: var(--greycolor);
+}
+
+.navbar li {
+  float: left;
+  font-size: 24px;
+  margin: 5px;
+  padding: 0;
+  display: block;
+  color: var(--white);
+  border-right: 1px solid var(--white);
+}
+
+.navbar li:last-child {
+  border-right: none;
+  border-left: 1px solid var(--white);
+  padding-left: 5px;
+}
+
+.navbar a {
+  padding: 10px;
+  margin: 5px;
+  color: var(--white);
+}
+
+.navbar a:hover {
+  background-color: var(--greycolor);
+}
+
+.links {
+  margin-top: 10px;
+  float: left;
+}
+
+.links ul {
+  list-style-type: none;
+  margin-top: 10px;
+  padding: 0px;
+  width: 150px;
+  background-color: var(--darkgreycolor);
+  border-style: solid;
+  border-color: var(--greycolor);
+}
+
+.links li a {
+  color: var(--white);
+  display: block;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.links li a:last-child {
+  border-bottom: none;
+  border-top: 1px solid var(--white);
+  padding-top: 5px;
+}
+
+.links li a:hover {
+  background-color: var(--greycolor);
+}
+
+.main {
+  margin-left: 175px;
+  margin-top: 20px;
+  border-radius: 50px 0px 50px 0;
+  border-style: outset;
+  width: 1000px;
+  height: 750px;
+  background-color: var(--darkgreycolor);
+  font-size: 18px;
+}
+
+
+h1 {
+  font-size: 22px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+p {
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+.container {
+  position: relative;
+  margin-left: 5em;
+}
+
+.container img {
+  height: 400px;
+  width: 800px;
+  margin: auto;
+  z-index: -1;
+}
+
+#imageText {
+  position: absolute;
+  bottom: 0px;
+  right: 130px;
+}
+
+.footer {
+  background-color: var(--darkgreycolor);
+  border: 1px solid var(--white);
+  width: 1175px;
+  height: 20px;
+  padding-left: 10px;
+  margin-top: 20px;
 }
