@@ -230,18 +230,6 @@ const dataset1 = [
     }
   }
 ];
-//Using the placeholder User data:
-//create and print a list of phone numbers
-const phoneNumbers = dataset1.map(dataset1 => {
-  return dataset1.phone;
-});
-console.log(phoneNumbers);
-//create and print a list of website and email pairs
-//(pair them in a string, array, or object)
-const webMail = dataset1.map(dataset1 => [dataset1.website, dataset1.email]);
-console.log(webMail);
-
-//---
 const tasks = [
   {
     userId: 1,
@@ -1453,16 +1441,6 @@ const tasks = [
     completed: false
   }
 ];
-//Using the placeholder To-Do data:
-// create a list of user 9's to-dos
-const user9tasks = tasks.filter(todo => todo.userId === 9);
-//console.log(user9tasks);
-// then find the number of user 9's incomplete tasks
-const user9tasksIncom = user9tasks.filter(tasks => tasks.completed === false);
-console.log(user9tasksIncom);
-
-//---
-// Using the placeholder Post data:
 const post = [
   {
     userId: 1,
@@ -2173,6 +2151,28 @@ const post = [
       "cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut"
   }
 ];
+//------
+//------
+//Using the placeholder User data:
+//create and print a list of phone numbers
+const phoneNumbers = dataset1.map(dataset1 => {
+  return dataset1.phone;
+});
+console.log(phoneNumbers);
+//create and print a list of website and email pairs
+//(pair them in a string, array, or object)
+const webMail = dataset1.map(dataset1 => [dataset1.website, dataset1.email]);
+console.log(webMail);
+//---
+//Using the placeholder To-Do data:
+// create a list of user 9's to-dos
+const user9tasks = tasks.filter(todo => todo.userId === 9);
+//console.log(user9tasks);
+// then find the number of user 9's incomplete tasks
+const user9tasksIncom = user9tasks.filter(tasks => tasks.completed === false);
+console.log(user9tasksIncom);
+//---
+// Using the placeholder Post data:
 // create a list of user 5's posts
 const user5Posts = post.filter(posts => post.userId === 5);
 // then, create a list of title and body pairs
